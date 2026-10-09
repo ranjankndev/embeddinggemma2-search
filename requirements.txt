@@ -1,0 +1,5 @@
+sentence-transformers>=6.1   # multimodal encode(); tested with 6.1.0
+torch
+pillow
+soundfile
+numpy

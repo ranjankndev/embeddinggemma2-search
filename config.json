@@ -1,0 +1,15 @@
+{
+  "model_id": "google/embeddinggemma-2",
+  "files_dir": "my_phone",
+  "index_dir": "index",
+  "query_prompt": "SearchQuery",
+  "document_prompt": "Document",
+  "video_frames": 8,
+  "top_k": 5,
+  "extensions": {
+    "image": [".jpg", ".jpeg", ".png", ".webp"],
+    "audio": [".wav", ".flac", ".ogg", ".mp3"],
+    "video": [".mp4", ".mov", ".webm", ".mkv"],
+    "text":  [".txt"]
+  }
+}
