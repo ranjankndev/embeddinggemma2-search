@@ -24,7 +24,7 @@ They're found because EmbeddingGemma 2 puts **every kind of file into the same 7
 
 ```mermaid
 flowchart LR
-    subgraph ONCE["① python index.py — once, and again when you add files"]
+    subgraph ONCE["python index.py — once, and again when you add files"]
         direction TB
         F["my_phone/<br/>📷 .jpg  🎞 .mp4  🔊 .wav  💬 .txt"] --> K{"file type?<br/>(kind_of)"}
         K -->|image| I["path to the photo"]
@@ -36,7 +36,7 @@ flowchart LR
         E1 --> DB[("index/<br/>vectors.npy<br/>items.json")]
     end
 
-    subgraph EACH["② python search.py &quot;your words&quot; — every search"]
+    subgraph EACH[" python search.py &quot;your words&quot; — every search"]
         direction TB
         Q["your words"] --> M2["EmbeddingGemma 2<br/>text part only<br/>+ 'SearchQuery' prompt<br/>(embed_query)"]
         M2 --> E2["768 numbers"]
