@@ -38,7 +38,7 @@ flowchart LR
 
     subgraph EACH[" python search.py &quot;your words&quot; — every search"]
         direction TB
-        Q["your words"] --> M2["EmbeddingGemma 2<br/>text part only<br/>+ 'SearchQuery' prompt<br/>(embed_query)"]
+        Q['your words'] --> M2["EmbeddingGemma 2<br/>text part only<br/>+ 'SearchQuery' prompt<br/>(embed_query)"]
         M2 --> E2["768 numbers"]
         E2 --> C["cosine similarity<br/>= dot product with<br/>every stored vector"]
         C --> R["ranked files<br/>of every kind"]
